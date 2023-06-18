@@ -29,6 +29,7 @@ putchar('0' + d);
 if (ab != 98)
 {
 putchar(',');
+putchar(' ');
 }
 }
 }
