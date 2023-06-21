@@ -5,7 +5,7 @@
  *
  * Return: On success 0.
  */
-int p(void)
+int main(void)
 {
 char out[] = "_putchar";
 int i = 0;
