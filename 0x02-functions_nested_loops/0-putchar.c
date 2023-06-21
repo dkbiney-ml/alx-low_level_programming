@@ -14,6 +14,6 @@ while (out[i] != '\0')
 _putchar(out[i]);
 i++; 
 }
-_putchar("\n");
+_putchar('\n');
 return (0);
 }
