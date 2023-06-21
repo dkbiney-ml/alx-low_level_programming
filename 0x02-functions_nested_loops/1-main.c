@@ -3,17 +3,12 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int r;
-
-	r = print_last_digit(INT_MIN);
-    printf("%d \n",INT_MIN);
-	_putchar('0' + r);
-	_putchar('\n');
-	return (0);
+    jack_bauer();
+    return (0);
 }
