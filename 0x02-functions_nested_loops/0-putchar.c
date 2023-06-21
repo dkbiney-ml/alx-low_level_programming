@@ -1,16 +1,19 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
-
-/* betty style doc for function main goes there */
+#include "main.h"
 /**
- * main - Entry point
+ * p - writes the character c to stdout
+ * @c: The character to print
  *
- * Return: Always 0 (Success)
+ * Return: On success 0.
  */
-int main(void)
+int p(void)
 {
-char *out = "_putchar";
-printf("%s\n", out);
+char out[] = "_putchar";
+int i = 0;
+while (out[i] != '\0')
+{
+_putchar(out[i]);
+i++; 
+}
+_putchar("\n");
 return (0);
 }
