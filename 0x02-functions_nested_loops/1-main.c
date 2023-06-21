@@ -1,5 +1,3 @@
-#include <limits.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,6 +7,6 @@
  */
 int main(void)
 {
-    jack_bauer();
+    times_table();
     return (0);
 }
