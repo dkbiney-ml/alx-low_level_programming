@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * p - writes the character c to stdout
- * @c: The character to print
- *
+ * main - writes the character c to stdout
+ * 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
  * Return: On success 0.
  */
 int main(void)
@@ -12,7 +11,7 @@ int i = 0;
 while (out[i] != '\0')
 {
 _putchar(out[i]);
-i++; 
+i++;
 }
 _putchar('\n');
 return (0);
