@@ -21,6 +21,7 @@ break;
 _putchar(' ');
 j++;
 }
+if (j != n - 1)
 _putchar('\n');
 i++;
 }
