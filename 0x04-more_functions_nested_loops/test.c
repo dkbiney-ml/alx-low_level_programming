@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main(void)
 {
-int c = 'w';
+int c = 5;
 char i;
-for (i = 'A'; i <= 'Z'; i++)
+for (i = 0; i <= 9; i++)
 {
 if (c == i)
 {
-putchar(c);
+putchar('0' + c);
 return (1);
 }
 }
