@@ -12,7 +12,6 @@ for (i = 'A'; i <= 'Z'; i++)
 {
 if (c == i)
 {
-_putchar(c);
 return (1);
 }
 }
