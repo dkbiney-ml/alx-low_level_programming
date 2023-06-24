@@ -1,9 +1,12 @@
 #include <stdio.h>
-int main(void)
+void main(void)
 {
-int a = 5;
-int b = 8;
-int sum = a * b;
-printf("%d",sum);
-return (sum);
+int i = 0;
+while (i <= 9)
+{
+putchar('0' + i);
+i++;
+}
+putchar('\n');
+// return (0);
 }
