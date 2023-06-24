@@ -16,7 +16,7 @@ while (j < size)
 _putchar('#');
 j++;
 }
-if (j != size - 1)
+if (j < size - 1)
 _putchar('\n');
 i++;
 }
