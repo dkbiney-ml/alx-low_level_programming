@@ -8,7 +8,7 @@ int main(void)
 {
 long st = 612852475143;
 long i;
-for (i = 2; i < 612852475143; i++)
+for (i = 3; i < st; i++)
 {
 while (st % i == 0)
 {
