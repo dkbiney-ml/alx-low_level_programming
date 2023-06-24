@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * main - writes the character c to stdout
  * Return: On success 1.
@@ -16,7 +15,7 @@ for (i = 1; i <= 100; i++)
 {
 if (i % 15 == 0)
 {
-printf("%s ",fb);
+printf("%s ", fb);
 continue;
 }
 if (i % 5 == 0)
@@ -26,7 +25,7 @@ continue;
 }
 if (i % 3 == 0)
 {
-printf("%s ",f);
+printf("%s ", f);
 continue;
 }
 else
