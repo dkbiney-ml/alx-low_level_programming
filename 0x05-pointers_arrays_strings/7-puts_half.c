@@ -11,10 +11,7 @@ while (*(s + i) != '\0')
 {
 i++;
 }
-if (i % 2 == 0)
 i = (i) / 2;
-else
-i = (i - 1) / 2;
 while (*(s + i) != '\0')
 {
 _putchar(*(s + i));
