@@ -11,15 +11,10 @@ while (*(s + i) != '\0')
 {
 i++;
 }
-int j = i;
-char temp[i];
-while (i >= 1)
+while (i - 1 >= 0)
 {
-temp[i - 1] = *(s + (i - 1));
+_putchar(*(s + i - 1));
 i--;
 }
-while(i = 0)
-{
-*(s + i) = temp[j - i - 1];
-}
+_putchar('\n');
 }
