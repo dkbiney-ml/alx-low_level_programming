@@ -1,26 +1,28 @@
 #include "main.h"
 /**
- * print_rev - entry point
+ * rev_string - entry point
  * @s : input char
  * Return : void
 */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 int i = 0;
 int j;
+char temp[100];
 while (*(s + i) != '\0')
 {
 i++;
 }
-j = i;
-char temp[j];
-while (i >= 1)
+j = i - 1;
+while (j >= 0)
 {
-temp[i - 1] = *(s + (i - 1));
-i--;
+temp[j] = *(s + j);
+j--;
 }
-while(i == 0)
+while (s[j + 1] != '\0')
 {
-*(s + i) = temp[j - i - 1];
+s[j + 1] = *(temp + i - 1);
+i--;
+j++;
 }
 }
