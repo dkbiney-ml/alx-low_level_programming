@@ -12,14 +12,10 @@ int dest_len = 0;
 int i;
 while (*(dest + dest_len) != '\0')
 dest_len++;
-for (i = 0;i < dest_len ;i++)
+for (i = 0;i < n ;i++)
 {
-if (i >= n )
-{
-dest[i] = '\0';
-}
-if (i < n)
 dest[i] = src[i];
+
 }
 return (dest);
 }
