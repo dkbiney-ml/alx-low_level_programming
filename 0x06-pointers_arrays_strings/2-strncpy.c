@@ -14,8 +14,14 @@ while (*(dest + dest_len) != '\0')
 dest_len++;
 for (i = 0;i < n ;i++)
 {
+if (src[i] == '\0')
+break;
 dest[i] = src[i];
-
+}
+while (i < dest_len)
+{
+dest[i] = '\0';
+i++;
 }
 return (dest);
 }
