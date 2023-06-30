@@ -8,27 +8,27 @@
  */
 int main(void)
 {
-    char s1[98] = "Hello ";
-    char s2[] = "World!\n";
+    char dest[98] = "Hello ";
+    char src[] = "World!\n";
     char *ptr;
-int i,j = 0;
-    printf("%s\n", s1);
-    printf("%s", s2);
+    int dest_len = 0;
+    int i;
+    int n = 1024;
+    printf("%s\n", dest);
+    printf("%s", src);
 
-while(*(s1 + i) != '\0')
-{
- i++;
-}
-while(i)
-{
-*(s1 + i) = s2[j];
-if (s2[j] == '\0')
-break;
-j++;
-}
-ptr = s1;
-    printf("%s", s1);
-    printf("%s", s2);
+    while (*(dest + dest_len) != '\0')
+    {
+        dest_len++;
+    }
+    for (i = 0; i < n && src[i] != '\0'; i++)
+    {
+        dest[dest_len + i] = src[i];
+    }
+    dest[dest_len + i] = '\0';
+    ptr = dest;
+    printf("%s", dest);
+    printf("%s", src);
     printf("%s", ptr);
     return (0);
 }
