@@ -24,10 +24,9 @@ r +=  temp / d;
 t = temp / d;
 if (r != 0 || t != 0)
 _putchar('0' + t);
-temp -= t * d;
+temp = temp - t *d;
 d /= 10;
 }
-
 }
 if (n != 0)
 {
