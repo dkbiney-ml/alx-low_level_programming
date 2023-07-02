@@ -21,23 +21,6 @@ int main(void)
     printf("%c and its rot13: %c\n", set[2], rot13[2]);
     char str[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
 
-    while (str[i] != '\0')
-    {
-        j = 0;
-        while (set[j] != '\0')
-        {
-            if (set[j] == str[i])
-            {
-                str[i] = rot13[j];
-                break;
-            }
-            j++;
-        }
-        i++;
-    }
- printf("%s", str);
-    printf("------------------------------------\n");
-    printf("%s", s);
-    printf("------------------------------------\n");
+    printf("%d", __INT_MAX__);
     return (0);
 }
