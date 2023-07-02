@@ -25,37 +25,6 @@ void print_array(int *a, int n)
     printf("\n");
 }
 
-void reverse_array(int *a, int n)
-{
-while (n - 1 >= 0)
-{
-long d = 10000000000;
-int r = 0;
-int temp = a[n - 1];
-if (temp == 0)
-putchar('0' + temp);
-else
-{
-while (d != 0)
-{
-r +=  temp / d;
-int t = temp / d;
-if (r != 0 || t != 0)
-putchar('0' + t);
-temp = temp - (t * d); 
-d /= 10;
-}
-
-}
-if (n != 0)
-{
-putchar(',');
-putchar(' ');
-}
-n--;
-}
-putchar('\n');
-}
 /**
  * main - check the code
  *
