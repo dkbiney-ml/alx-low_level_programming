@@ -1,35 +1,27 @@
 #include "main.h"
 /**
  * leet - check the code
- * @a: an array of integers
+ * @str: an array of integers
  * Return: nothing.
  */
 char *leet(char *str)
 {
-int capitalizeNext = 1;
-while (*str)
+int i, j = 0;
+char set[] = {'a', '4', 'A', '4', 'e', '3', 'E', '3',
+'o', '0', 'O', '0', 't', '7', 'T', '7', 'l', '1', 'L', '1'};
+while (str[i] != '\0')
 {
-if (*str == ' ' || *str == '\t' || *str == '\n' || 
-*str == '\r' || *str == '\f' || *str == '\v' || *str == '.' ||
-*str == ',' || *str == ';' || *str == '"' || *str == '!' ||
-*str == '?' || *str == ')' || *str == ')' || *str == '(' ||
-*str == '{' || *str == '}')
+j = 0;
+while (set[j] != '\0')
 {
-capitalizeNext = 1;
+if (set[j] == str[i])
+{
+str[i] = set[j + 1];
+break;
 }
-else
-{
-if (capitalizeNext && ((*str >= 'A' && *str <= 'Z') || (*str >= '0' && *str <= '9' )))
-{
-capitalizeNext = 0;
+j++;
 }
-if (capitalizeNext && *str >= 'a' && *str <= 'z')
-{
-*str = *str - 'a' + 'A';
-capitalizeNext = 0;
-}
-}
-str++;
+i += 1;
 }
 return (str);
 }
