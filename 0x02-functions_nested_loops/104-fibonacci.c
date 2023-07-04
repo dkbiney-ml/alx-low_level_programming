@@ -7,25 +7,21 @@
  */
 int main(void)
 {
-double prev1 = 1.0;
-double prev2 = 2.0;
-double cur = 0.0;
 int i = 1;
-for (i = 1; i <= 98; i++)
+double prev1 = 1;
+double prev2 = 2;
+printf("%.0f, %.0f, ", prev1, prev2);
+for (i = 3; i <= 98; ++i)
 {
-if (i == 1 || i == 2)
-printf("%d", i);
-else
-{
-cur = prev1 + prev2;
-prev1 = prev2;
-prev2 = cur;
-printf("%.0f", cur);
-}
+double next = prev1 + prev2;
+printf("%.0f", next);
 if (i != 98)
+{
 printf(", ");
+}
+prev1 = prev2;
+prev2 = next;
 }
 printf("\n");
 return (0);
 }
-
