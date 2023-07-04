@@ -16,5 +16,5 @@ acc += i;
 i++;
 }
 printf("%d\n", acc);
-return (acc);
+return (0);
 }
