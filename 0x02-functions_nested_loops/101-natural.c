@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-void main(void)
+int main(void)
 {
 int i = 0;
 int acc = 0;
@@ -16,4 +16,5 @@ acc += i;
 i++;
 }
 printf("%d\n", acc);
+return (acc);
 }
