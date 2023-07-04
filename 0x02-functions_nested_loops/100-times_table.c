@@ -18,10 +18,12 @@ for (j = 0; j <= n; j++)
 {
 if (j * i > 9 && j * i < 100)
 s = 2;
-else
+if (j * i < 10)
 s = 3;
 if (j * i >= 100)
 s = 1;
+if (j == 0)
+s = 0;
 if (j == n)
 {
 printf("%*s%d\n", s, "", j * i);
