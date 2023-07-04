@@ -10,7 +10,6 @@ int main(void)
 double prev1 = 1.0;
 double prev2 = 2.0;
 double cur = 0.0;
-double sum = 0.0;
 int i = 1;
 for (i = 1; i <= 98; i++)
 {
