@@ -16,17 +16,20 @@ for (i = 0; i <= n; i++)
 int j = 0;
 for (j = 0; j <= n; j++)
 {
-if (!j)
-printf("%d,", j * i);
 if (j * i > 9 && j * i < 100)
 s = 2;
 else
 s = 3;
 if (j * i >= 100)
 s = 1;
-printf("%*s%d,", s, "", j * i);
 if (j == n)
-printf("\n");
+{
+printf("%*s%d\n", s, "", j * i);
+break;
+}
+if (!j)
+printf("%d,", j * i);
+printf("%*s%d,", s, "", j * i);
 }
 }
 }
