@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-int prev1, i = 1;
-int prev2 = 2;
-unsigned long cur;
+unsigned long prev1 = 1;
+unsigned long prev2 = 2;
+unsigned long cur = 0;
+int i;
 for (i = 1; i <= 50; i++)
 {
-
 if (i == 1 || i == 2)
 printf("%d,", i);
 else
