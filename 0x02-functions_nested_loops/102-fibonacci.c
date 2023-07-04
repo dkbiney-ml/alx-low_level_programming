@@ -25,5 +25,6 @@ printf("%lu", cur);
 if (i != 50)
 printf(", ");
 }
+printf("\n");
 return (0);
 }
