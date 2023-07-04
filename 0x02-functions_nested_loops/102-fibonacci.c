@@ -14,16 +14,16 @@ int i;
 for (i = 1; i <= 50; i++)
 {
 if (i == 1 || i == 2)
-printf("%d,", i);
+printf("%d", i);
 else
 {
 cur = prev1 + prev2;
 prev1 = prev2;
 prev2 = cur;
-printf("%lu,", cur);
+printf("%lu", cur);
 }
 if (i != 50)
-printf(" ");
+printf(", ");
 }
 return (0);
 }
