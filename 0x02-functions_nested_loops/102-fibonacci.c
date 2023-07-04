@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-int prev1 = 1;
+int prev1, i = 1;
 int prev2 = 2;
 unsigned long cur;
-for (int i = 1; i <= 50; i++)
+for (i = 1; i <= 50; i++)
 {
 
 if (i == 1 || i == 2)
