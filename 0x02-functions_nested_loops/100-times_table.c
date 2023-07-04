@@ -27,8 +27,6 @@ if (j == n)
 printf("%*s%d\n", s, "", j * i);
 break;
 }
-if (!j)
-printf("%d,", j * i);
 printf("%*s%d,", s, "", j * i);
 }
 }
