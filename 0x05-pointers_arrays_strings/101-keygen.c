@@ -31,8 +31,8 @@ password[length] = '\0';
  */
 int main(void)
 {
-srand(time(NULL));
 char password[9];
+srand(time(NULL));
 generateRandomPassword(password, 9);
 printf("Random Password: %s\n", password);
 return (0);
