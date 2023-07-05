@@ -18,7 +18,8 @@ return (rand() % ('~' - '!' + 1) + '!');
  */
 void generateRandomPassword(char *password, int length)
 {
-for (int i = 0; i < length; ++i)
+int i;
+for (i = 0; i < length; ++i)
 {
 password[i] = generateRandomCharacter();
 }
