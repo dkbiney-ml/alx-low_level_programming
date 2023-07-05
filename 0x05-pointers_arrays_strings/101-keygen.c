@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define PASSWORD_LENGTH 8
 /**
  * generateRandomCharacter - check the code
  * Return: Always 0.
@@ -33,8 +32,8 @@ password[length] = '\0';
 int main(void)
 {
 srand(time(NULL));
-char password[PASSWORD_LENGTH + 1];
-generateRandomPassword(password, PASSWORD_LENGTH);
+char password[9];
+generateRandomPassword(password, 9);
 printf("Random Password: %s\n", password);
 return (0);
 }
