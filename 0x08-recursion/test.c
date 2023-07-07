@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include "string.h"
 int find_sqrt(int h, int n)
 {
 int square = h * h;
@@ -27,7 +27,8 @@ find_sqrt(n / 2, n);
 int main(void)
 {
     int r;
-
+int s = strlen("");
+printf("str len of empty str: %d", s);
     r = _sqrt_recursion(1);
     printf("%d\n", r);
     r = _sqrt_recursion(1024);
