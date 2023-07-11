@@ -12,12 +12,15 @@ char *_strdup(char *str)
 	char *ptr;
 
 	unsigned int i = 0;
+    if (str == NULL)
+		return (NULL);
+
     int len = strlen(str) + 1;
 
 	ptr = malloc(sizeof(char) * len);
     printf("size : %ld\n", sizeof(char) );
 
-	if (ptr == NULL || str == 0)
+	if (ptr == NULL)
 		return (NULL);
 	while (str[i] != '\0')
 	{
@@ -31,7 +34,7 @@ int main(void)
 {
     char *s;
 
-    s = _strdup("First, solve the problem. Then, write the code.");
+    s = _strdup(NULL);
     if (s == NULL)
     {
         printf("failed to allocate memory\n");
