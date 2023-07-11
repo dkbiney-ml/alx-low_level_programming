@@ -1,26 +1,43 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 /**
- *create_array - entry
- *@size: int
- *@c: char
+ *_strdup - entry
+ *@str: int
  *Return: char or NULL
  */
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
 	char *ptr;
+
 	unsigned int i = 0;
-	ptr = malloc(sizeof(c) * size);
-	if (ptr == NULL)
+    int len = strlen(str) + 1;
+
+	ptr = malloc(sizeof(char) * len);
+    printf("size : %ld\n", sizeof(char) );
+
+	if (ptr == NULL || str == 0)
 		return (NULL);
-	while(i < size)
+	while (str[i] != '\0')
 	{
-		ptr[i] = c;
+		ptr[i] = str[i];
 		i++;
 	}
+	ptr[i] = '\0';
 	return (ptr);
 }
-// int main()
-// {
-//     create_array()
-// }
+int main(void)
+{
+    char *s;
+
+    s = _strdup("First, solve the problem. Then, write the code.");
+    if (s == NULL)
+    {
+        printf("failed to allocate memory\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
+    return (0);
+}

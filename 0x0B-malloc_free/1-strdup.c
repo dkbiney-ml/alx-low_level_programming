@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  *_strdup - entry
  *@str: int
@@ -10,8 +11,9 @@ char *_strdup(char *str)
 	char *ptr;
 
 	unsigned int i = 0;
+int len = strlen(str) + 1;
 
-	ptr = malloc(sizeof(str));
+	ptr = malloc(sizeof(char) * len);
 
 	if (ptr == NULL || str == 0)
 		return (NULL);
