@@ -1,0 +1,46 @@
+!<arch>
+1-memcpy.c/     0           0     0     644     92        `
+#include "main.h"
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	return (dest);
+}
+2-strchr.c/     0           0     0     644     67        `
+#include "main.h"
+
+char *_strchr(char *s, char c)
+{
+	return (s);
+}
+
+3-strspn.c/     0           0     0     644     80        `
+#include "main.h"
+
+unsigned int _strspn(char *s, char *accept)
+{
+	return (0);
+}
+4-strpbrk.c/    0           0     0     644     74        `
+#include "main.h"
+
+char *_strpbrk(char *s, char *accept)
+{
+	return (s);
+}
+5-strstr.c/     0           0     0     644     87        `
+#include "main.h"
+
+char *_strstr(char *haystack, char *needle)
+{
+	return (haystack);
+}
+
+main.c/         0           0     0     644     141       `
+#include "main.h"
+
+int main(void)
+{
+	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+	return (0);
+}
