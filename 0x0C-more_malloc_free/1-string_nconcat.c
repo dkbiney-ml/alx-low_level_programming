@@ -10,27 +10,24 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned long int len, temp_l, i = 0;
-char *ptr;
-char *temp = s1;
-char *temp2 = s2;
+unsigned long int len1, len2, concat_len;
+char *result;
 if (s1 == NULL)
-temp = "";
+s1 = "";
 if (s2 == NULL)
-temp = "";
-temp_l = strlen(temp);
-len = strlen(temp) + (n < strlen(temp2) ? n : strlen(temp)) + 1;
-ptr = malloc(len *sizeof(char));
-if (ptr == NULL)
-return (NULL);
-while (i < len)
-{
-if (i < temp_l)
-*(ptr + i) = temp[i];
-else
-*(ptr + i) = temp2[i - temp_l];
-i++;
-}
-ptr[len] = '\0';
-return (ptr);
+s2 = "";
+
+len1 = strlen(s1);
+len2 = strlen(s2);
+concat_len = len1 + (n >= len2 ? len2 : n);
+
+result = malloc((concat_len + 1) * sizeof(char));
+if (result == NULL)
+return NULL;
+
+strncpy(result, s1, len1);
+strncat(result, s2, n >= len2 ? len2 : n);
+result[concat_len] = '\0';
+
+return result;
 }
