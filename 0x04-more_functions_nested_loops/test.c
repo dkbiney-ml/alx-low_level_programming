@@ -15,6 +15,8 @@ int main (int argc, char *argv[])
     }
   else
     {
+
+      printf("anoeht");
       printf("The command had no other arguments.\n");
     }
 
