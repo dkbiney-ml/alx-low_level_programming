@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
  * init_dog - entry
- * @d - ptr
+ * @d: ptr
  * @name: string
  * @age: float
  * @owner: char
